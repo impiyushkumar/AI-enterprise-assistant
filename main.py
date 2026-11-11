@@ -7,7 +7,7 @@ from datetime import datetime
 import os
 
 # === CONFIG ===
-genai.configure(api_key=os.environ.get("GEMINI_API_KEY", "AIzaSyCYpSpBr9Q6ks83d_HKeKdzaQRY-DVSU0s"))
+genai.configure(api_key=os.environ.get("GEMINI_API_KEY")
 model = genai.GenerativeModel("gemini-1.5-flash")
 
 app = FastAPI(title="AI Enterprise Assistant", version="1.0")
